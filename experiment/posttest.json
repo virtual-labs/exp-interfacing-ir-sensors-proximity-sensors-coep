@@ -2,12 +2,46 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What happens when the IR sensor detects an object?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "The sensor outputs HIGH",
+        "b": "The sensor outputs LOW",
+        "c": "The sensor turns off",
+        "d": "The LED blinks randomly"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which pin on the Arduino reads the sensor data in this experiment?",
+      "answers": {
+        "a": "A0",
+        "b": "D13",
+        "c": "D2",
+        "d": "TX"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "Why is a resistor used in series with the LED?",
+      "answers": {
+        "a": "To protect the LED by limiting current",
+        "b": "To reduce brightness",
+        "c": "To act as a fuse",
+        "d": "To increase voltage"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -18,13 +52,115 @@
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
-    {
-      "question": "This is a Sample Question 2?",
+	{
+      "question": "Which Arduino function is used to set a pin as input or output?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "setMode()",
+        "b": "pinConfig()",
+        "c": "pinMode()",
+        "d": "digitalSetup()"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "How do you turn ON an LED connected to a digital pin?",
+      "answers": {
+        "a": "analogWrite(pin, 255)",
+        "b": "digitalWrite(pin, HIGH)",
+        "c": "digitalRead(pin)",
+        "d": "pinMode(pin, OUTPUT)"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "What should be connected to the IR sensor’s VCC pin?",
+      "answers": {
+        "a": "5V",
+        "b": "GND",
+        "c": "3.3V",
+        "d": "D13"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "Which pin is typically used for the Arduino Uno’s built-in LED?",
+      "answers": {
+        "a": "A1",
+        "b": "D13",
+        "c": "TX",
+        "d": "SDA"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "What is the purpose of connecting the IR sensor’s GND pin to Arduino’s GND?",
+      "answers": {
+        "a": "To complete the circuit",
+        "b": "To prevent short circuits",
+        "c": "To increase signal strength",
+        "d": "To save power"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "What type of component is the IR sensor classified as?",
+      "answers": {
+        "a": "Passive component",
+        "b": "Digital actuator",
+        "c": "Analog converter",
+        "d": "Digital sensor"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "Which function allows you to control the LED based on sensor input?",
+      "answers": {
+        "a": "digitalRead()",
+        "b": "digitalWrite()",
+        "c": "Both a and b",
+        "d": "None of the above"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",

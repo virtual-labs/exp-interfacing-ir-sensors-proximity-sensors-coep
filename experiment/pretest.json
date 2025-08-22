@@ -2,12 +2,63 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the primary purpose of an IR sensor?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To measure temperature",
+        "b": "To detect infrared light from a TV remote",
+        "c": "To detect the presence of an object using reflected IR light",
+        "d": "To convert analog signals to digitalTo convert analog signals to digitalTo convert analog signals to digital"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which pin on the IR sensor sends the signal to the Arduino?",
+      "answers": {
+        "a": "VCC",
+        "b": "GND",
+        "c": "RESET",
+        "d": "OUT"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+	   {
+      "question": "What kind of signal does an IR sensor typically send to the microcontroller?",
+      "answers": {
+        "a": "Analog",
+        "b": "Digital (HIGH or LOW)",
+        "c": "PWM",
+        "d": "Serial"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	 {
+      "question": "What does the Arduino function digitalRead(pin) do?",
+      "answers": {
+        "a": "Reads a digital value from a pin (HIGH or LOW)",
+        "b": "Reads an analog value from a pin",
+        "c": "Sends a HIGH signal to a pin",
+        "d": "Blinks the onboard LED"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -18,13 +69,13 @@
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
-    {
-      "question": "This is a Sample Question 2?",
+	 {
+      "question": "What is typically the state of the IR sensor’s output when no object is detected?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "LOW",
+        "b": "HIGH",
+        "c": "Fluctuating",
+        "d": "Analog"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -32,7 +83,7 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
