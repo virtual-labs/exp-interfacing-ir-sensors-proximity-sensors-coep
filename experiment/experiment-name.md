@@ -1,1 +1,1 @@
-## interface an IR sensor with an Arduino Uno Board
+## Interface an IR sensor with an Arduino Uno Board
