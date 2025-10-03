@@ -2,173 +2,123 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What happens when the IR sensor detects an object?",
+      "question": "What is the primary difference in how an analog IR sensor measures distance compared to how an LM35 measures temperature?",
       "answers": {
-        "a": "The sensor outputs HIGH",
-        "b": "The sensor outputs LOW",
-        "c": "The sensor turns off",
-        "d": "The LED blinks randomly"
+        "a": ". The IR sensor's voltage output is non-linear with respect to distance, while the LM35's is linear with respect to temperature",
+        "b": "The IR sensor uses a digital signal, while the LM35 uses an analog signal",
+        "c": "The IR sensor's output is linear, while the LM35's is non-linear",
+        "d": "The IR sensor measures temperature, while the LM35 measures distance"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "b",
+    
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "Which pin on the Arduino reads the sensor data in this experiment?",
+      "question": "In the analog IR sensor's operation, what is the role of the IR emitter?",
       "answers": {
-        "a": "A0",
-        "b": "D13",
-        "c": "D2",
-        "d": "TX"
+        "a": "To detect the reflected infrared light from the object",
+        "b": " To receive the signal from the Arduino",
+        "c": "To send out an infrared light beam towards the object",
+        "d": "To convert the analog signal to a digital one"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+    
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
 	{
-      "question": "Why is a resistor used in series with the LED?",
+      "question": "What is the primary function of the NPN transistor in your circuit?",
       "answers": {
-        "a": "To protect the LED by limiting current",
-        "b": "To reduce brightness",
-        "c": "To act as a fuse",
-        "d": "To increase voltage"
+        "a": "To regulate the voltage to the relay",
+        "b": "To act as a current amplifier, allowing the Arduino to switch a higher current for the relay",
+        "c": "To convert the analog signal from the sensor to a digital signal",
+        "d": "To provide power directly to the motor"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-	{
-      "question": "Which Arduino function is used to set a pin as input or output?",
-      "answers": {
-        "a": "setMode()",
-        "b": "pinConfig()",
-        "c": "pinMode()",
-        "d": "digitalSetup()"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-	{
-      "question": "How do you turn ON an LED connected to a digital pin?",
-      "answers": {
-        "a": "analogWrite(pin, 255)",
-        "b": "digitalWrite(pin, HIGH)",
-        "c": "digitalRead(pin)",
-        "d": "pinMode(pin, OUTPUT)"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+     
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
 	{
-      "question": "What should be connected to the IR sensor’s VCC pin?",
+      "question": "The provided code for the IR sensor uses a non-linear formula to calculate distance. What is the value of pow(voltage, -1.154) in the formula used for?",
       "answers": {
-        "a": "5V",
-        "b": "GND",
-        "c": "3.3V",
-        "d": "D13"
+        "a": "To convert centimeters to inches",
+        "b": "To increase the sensor's measurement range",
+        "c": "To convert an analog value to a digital value",
+        "d": "To correct for the non-linear relationship between voltage and distance"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-	{
-      "question": "Which pin is typically used for the Arduino Uno’s built-in LED?",
-      "answers": {
-        "a": "A1",
-        "b": "D13",
-        "c": "TX",
-        "d": "SDA"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-	{
-      "question": "What is the purpose of connecting the IR sensor’s GND pin to Arduino’s GND?",
-      "answers": {
-        "a": "To complete the circuit",
-        "b": "To prevent short circuits",
-        "c": "To increase signal strength",
-        "d": "To save power"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-	{
-      "question": "What type of component is the IR sensor classified as?",
-      "answers": {
-        "a": "Passive component",
-        "b": "Digital actuator",
-        "c": "Analog converter",
-        "d": "Digital sensor"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+      
       "correctAnswer": "d",
       "difficulty": "beginner"
     },
 	{
-      "question": "Which function allows you to control the LED based on sensor input?",
+      "question": "What is the purpose of the if (distanceCm< 100 &&distanceCm> 0) statement in the loop() function?",
       "answers": {
-        "a": "digitalRead()",
-        "b": "digitalWrite()",
-        "c": "Both a and b",
-        "d": "None of the above"
+        "a": "To ensure the object is detected only when it is exactly 100 cm away",
+        "b": "To turn the motor and LED on if the object is closer than 100 cm",
+        "c": "To turn the motor and LED on only if the object is exactly at 0 cm",
+        "d": "To continuously display the distance without affecting the motor"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+     
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "Why is the 12V DC motor connected to a separate 12V power supply instead of the Arduino's 5V pin?",
+      "answers": {
+        "a": "The motor's voltage requirement is higher than what the Arduino's 5V pin can provide",
+        "b": "The motor will run faster on a separate power supply",
+        "c": " The separate power supply protects the motor from voltage spikes",
+        "d": "The motor will damage the Arduino if connected to its 5V pin"
       },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "What is the purpose of the lcd.clear() command at the beginning of the loop() function?",
+      "answers": {
+        "a": "To reset the LCD display to its factory settings",
+        "b": "To turn the LCD display off",
+        "c": "To erase the previous text so new text can be displayed clearly",
+        "d": "To change the brightness of the LCD display"
+      },
+     
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "What would happen if you used a digital IR sensor with the provided code?",
+      "answers": {
+        "a": "The code would work perfectly because both sensors are IR sensors",
+        "b": "The motor and LED would turn on and off, but the distance reading would be incorrect",
+        "c": "The Arduino board would be damaged due to the different pin types",
+        "d": "The LCD would show a random string of numbers"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "What is the primary benefit of using the I2C protocol for the LCD display?",
+      "answers": {
+        "a": "It eliminates the need for any wiring",
+        "b": "It provides a faster refresh rate for the display",
+        "c": "It allows the LCD to be powered by a separate power supply",
+        "d": "It reduces the number of pins required to connect the LCD to the Arduino"
+      },
+    
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "What is the primary benefit of using a relay in a project like this?",
+      "answers": {
+        "a": "It provides galvanic isolation, protecting the low-voltage Arduino circuit from the high-voltage motor circuit",
+        "b": "It reduces the amount of wiring needed",
+        "c": "It eliminates the need for a separate power supply",
+        "d": "It acts as a digital-to-analog converter"
+      },
+      
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]

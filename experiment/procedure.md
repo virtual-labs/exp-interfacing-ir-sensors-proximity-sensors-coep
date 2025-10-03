@@ -1,14 +1,30 @@
-### Procedure
+## Procedure
 
-1.	Connect the IR Sensor to Arduino:
-Connect the VCC pin of the IR sensor (U2) to the 5V pin of Arduino (U1).Connect the GND pin of the IR sensor to the GND pin of Arduino.Connect the OUT pin of the IR sensor to the D2 (Digital Pin 2) of Arduino.
-2.	Connect the LED:
-Connect the anode (positive leg) of the LED (D1) to Digital Pin 13 (D13) of the Arduino.Connect the cathode (negative leg) of the LED to one end of a 1kΩ resistor (R1).Connect the other end of the resistor to GND.
-3.	Power the Circuit:
-Make sure the Arduino is connected to your computer via USB or powered via a 5V supply.Verify that the IR sensor receives 5V and is grounded properly.
-4.	Upload the Code:
-Open the Arduino IDE and enter the code that reads the IR sensor and controls the LED.Verify the code and upload it to the Arduino Uno board.
-5.	Test the Circuit:
-Place an object in front of the IR sensor.If the object is detected (sensor output LOW), the LED turns ON.If no object is detected (sensor output HIGH), the LED stays OFF.
-6.	Adjust and Observe:
-Test the response by moving your hand or various objects near the IR sensor.Observe the LED behaviour and ensure it matches the sensor’s output.
+#### Configuration
+- Select input Pin For the sensor
+- Select output Pin For for the DC Motor
+- Select output Pin For for the LED
+- Select object material
+- Click on "GENERATE CODE" button to generate code
+- Click on "COMPILE" button to compile code
+- Click on "EXECUTE" button to execute code and goto mimic
+- If you want to download code click on "DOWNLOAD" button
+- The MIMIC will open on left side of screen
+
+#### Simulation
+- Connect the Output Pin from the Arduino to the transistor by click on the connecting points
+- Connect the selected Input Pin from the Arduino to the sensor by click on the connecting points
+- Connect the LED and Output Pin (selected pin) according to the circuit diagram by click on the connecting points
+- Connect the Output Pin (selected pin)  and DC motor according to the circuit diagram by click on the connecting points
+- Connect the relay and power supply according to the circuit diagram by click on the connecting points
+- Click on "Check Connection" to validate the circuit connections
+- If connections are shows wrong then you can click on the particular connected line to delete the wrong connection (wrong connection shows in RED color)
+- After completion of circuit click on check connection object will displayed in front of sensor
+- Click on "Plus" and "Minus" buttons  for movement the object 
+- When object reached in between the sensing range of the sensor then current will flows through the circuit and motor starts running 
+- Observe the changes in circuit and rotation of motor while changing the position of object from sensor 
+- Click on "Next Level" button for next steps 
+
+#### Questions
+- Read all the questions carefully and submit the answer
+- After submission, "Result" page will displayed
