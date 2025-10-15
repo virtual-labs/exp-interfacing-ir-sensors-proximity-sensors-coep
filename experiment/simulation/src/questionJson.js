@@ -6,38 +6,38 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Inductive proximity sensors are mainly used to detect:",
+					"QC": "IR sensors mainly work on the principle of:",
 					"ANS": [{
 						"ANSID": true,
-						"content": "Metallic objects"
+						"content": "Light reflection and reception"
 					}, {
 						"ANSID": false,
-						"content": "Plastic objects"
+						"content": " Magnetic flux"
 					}, {
 						"ANSID": false,
-						"content": "Wooden objects"
+						"content": " Ultrasonic waves"
 					},{
 						"ANSID": false,
-						"content": "Glass objects "
+						"content": "Current induction "
 					}]
 				}]
 			}, {
 
 				"QUES": [{
 					
-					"QC": "Capacitive proximity sensors can detect",
+					"QC": "Which material is detected best by an IR sensor?",
 					"ANS": [{
 						"ANSID": false,
-						"content": "Only metals"
+						"content": "Transparent glass"
 					}, {
 						"ANSID": true,
-						"content": "Metals and non-metals "
+						"content": "Opaque non-reflective object "
 					}, {
 						"ANSID": false,
-						"content": "Only wood "
+						"content": "Shiny metal "
 					}, {
 						"ANSID": false,
-						"content": "Only glass"
+						"content": "Air"
 					}]
 					
 				}]
@@ -45,19 +45,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Typical sensing range of inductive proximity sensors is:",
+					"QC": "The VCC pin of an IR sensor is connected to:",
 					"ANS": [{
 						"ANSID": true,
-						"content": "0.5 to 10 mm"
+						"content": "5V supply"
 					}, {
 						"ANSID": false,
-						"content": "50 to 200 mm"
+						"content": " Analog pin"
 					}, {
 						"ANSID": false,
-						"content": "1 to 5 meters"
+						"content": " Motor terminal"
 					}, {
 						"ANSID": false,
-						"content": "More than 10 meters"
+						"content": "GND"
 					}]
 					
 				}]
@@ -65,19 +65,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Typical sensing range of capacitive sensors is ",
+					"QC": "The GND pin of an IR sensor should be connected to: ",
 					"ANS": [{
 						"ANSID": false,
-						"content": "0.5 to 10 mm"
+						"content": "5V"
+					}, {
+						"ANSID": false,
+						"content": "Battery positive terminal"
 					}, {
 						"ANSID": true,
-						"content": " 2 to 50 mm"
+						"content": "Common ground of circuit"
 					}, {
 						"ANSID": false,
-						"content": "1 to 5 meters"
-					}, {
-						"ANSID": false,
-						"content": "5 to 10 meters"
+						"content": "Arduino TX pin"
 					}]
 					
 				}]
@@ -85,19 +85,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Which parameter affects the sensing distance of inductive sensors?",
+					"QC": "Which component is often used with IR sensors to control DC motors?",
 					"ANS": [{
 						"ANSID": false,
-						"content": " Temperature of the air"
+						"content": " Relay"
 					}, {
 						"ANSID": false,
-						"content": "Humidity in the environment"
+						"content": " L293D motor driver"
+					}, {
+						"ANSID": false,
+						"content": "MOSFET/Transistor"
 					}, {
 						"ANSID": true,
-						"content": "Material of the target"
-					}, {
-						"ANSID": false,
-						"content": "Color of the target"
+						"content": "All of the above"
 					}]
 					
 				}]
@@ -105,19 +105,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "Inductive sensors are not suitable for detecting",
+					"QC": "In which range IR sensors emit light?",
 					"ANS": [{
 						"ANSID": false,
-						"content": "Iron"
+						"content": "Visible spectrum"
 					}, {
 						"ANSID": true,
-						"content": "Wood"
+						"content": "Infrared spectrum"
 					}, {
 						"ANSID": false,
-						"content": "Copper"
+						"content": "Ultraviolet spectrum"
 					}, {
 						"ANSID": false,
-						"content": "Steel"
+						"content": " Microwave spectrum"
 					}]
 					
 				}]

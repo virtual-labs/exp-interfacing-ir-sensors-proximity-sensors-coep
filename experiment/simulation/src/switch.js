@@ -239,6 +239,7 @@ var r1 = paper.path("M"+(x+532)+" "+(y+400)+"l  60 0").attr({'stroke-width':2,st
 	var dctxt = paper.text(x+60, y+430,"GND").attr({"font-weight":"bold",'font-size': 13});
 	var dctxt = paper.text(x+100, y+230,"VCC").attr({"font-weight":"bold",'font-size': 13});
 //	var dctxt = paper.text(x+70, y+450,"10k\u03A9").attr({"font-weight":"bold",'font-size': 13,'fill':'#ed1f37',"font-family": "Arial, Helvetica, sans-serif"});
+	var dctxt = paper.text(x+410, y+500,"1k\u03A9").attr({"font-weight":"bold",'font-size': 13,'fill':'#ed1f37',"font-family": "Arial, Helvetica, sans-serif"});
 	var dctxt = paper.text(x+500, y+410,"1k\u03A9").attr({"font-weight":"bold",'font-size': 13,'fill':'#ed1f37',"font-family": "Arial, Helvetica, sans-serif"});
 	var dctxt = paper.text(x+600, y+460,"E").attr({'font-size': 13,"font-family": "Arial, Helvetica, sans-serif"});
 	var dctxt = paper.text(x+530, y+470,"2N2222-NPN Transistor").attr({'font-size': 11,"font-family": "Arial, Helvetica, sans-serif"});
@@ -477,7 +478,7 @@ var r1 = paper.path("M"+(x+532)+" "+(y+400)+"l  60 0").attr({'stroke-width':2,st
     
     
      var diodeLines = paper.path("M"+(x+160)+" "+(y+310)+"l  50 0 M"+(x+160)+" "+(y+328)+"l  50 0M"+(x+160)+" "+(y+345)+"l  50 0M"
-    +(x+160)+" "+(y+364)+"l  50 0M" +(x+160)+" "+(y+378)+"l  30 0M" +(x+160)+" "+(y+397)+"l  30 0M" ).attr({'stroke-width':1,stroke: "#000"});   
+    +(x+160)+" "+(y+364)+"l  50 0M" +(x+160)+" "+(y+378)+"l  35 0M" +(x+160)+" "+(y+397)+"l  30 0M" ).attr({'stroke-width':1,stroke: "#000"});   
     var coorectflg = 0;
 	var	wrongflg = 0;
  
@@ -935,7 +936,7 @@ checkStatus.click(function(){
 		ledoff.hide();
 		ledon.show();
 //		start(interval_plot1,onTime1,offTime1);
-//		next.show();
+		next.show();
 		lcd_text2.show();
 	}
 	}else{

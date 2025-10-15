@@ -325,50 +325,50 @@ $("#generateCode").click(function () {
 	<p>delay(2000);</p>
 	<p>lcd.clear();</p>
 	<p>}</p>
-	<p>}void loop() {</p>
- 	<p>}&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;// Read the analog voltage value from the sensor (0-1023)</p>
-  	<p>}int sensorValue = analogRead(irSensorPin);</p>
+	<p>void loop() {</p>
+ 	<p>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;// Read the analog voltage value from the sensor (0-1023)</p>
+  	<p>int sensorValue = analogRead(irSensorPin);</p>
 
-	<p>} &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;// Convert the voltage value to distance in centimeters</p>
-	<p>}&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;// (This formula is for a generic analog IR sensor.)</p>
-  	<p>}float voltage = sensorValue * (5.0 / 1024.0);</p>
-  	<p>}int distanceCm = 27.86 * pow(voltage, -1.154);</p>
+	<p> &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;// Convert the voltage value to distance in centimeters</p>
+	<p>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;// (This formula is for a generic analog IR sensor.)</p>
+  	<p>float voltage = sensorValue * (5.0 / 1024.0);</p>
+  	<p>int distanceCm = 27.86 * pow(voltage, -1.154);</p>
 
- 	<p>}&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;// If the object is within 100 cm, this logic will run.</p>
- <p>} if (distanceCm< 100 &&distanceCm> 0) {</p>
-	<p>}// Turn on the motor and LED</p>
-	<p>}digitalWrite(motorPin, HIGH);</p>
-	<p>}digitalWrite(ledPin, HIGH);</p>
+ 	<p> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;// If the object is within 100 cm, this logic will run.</p>
+ <p> if (distanceCm< 100 &&distanceCm> 0) {</p>
+	<p>// Turn on the motor and LED</p>
+	<p>digitalWrite(motorPin, HIGH);</p>
+	<p>digitalWrite(ledPin, HIGH);</p>
 	
-  <p>} &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;// Show the "object detected" message and distance on the LCD</p>
-	<p>}lcd.setCursor(0, 0);</p>
-	<p>}lcd.print("Object Detected!");</p>
-	<p>}lcd.setCursor(0, 1);</p>
-	<p>}lcd.print("Distance: ");</p>
-	<p>}lcd.print(distanceCm);</p>
-	<p>}lcd.print(" cm");</p>
+  <p> &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;// Show the "object detected" message and distance on the LCD</p>
+	<p>lcd.setCursor(0, 0);</p>
+	<p>lcd.print("Object Detected!");</p>
+	<p>lcd.setCursor(0, 1);</p>
+	<p>lcd.print("Distance: ");</p>
+	<p>lcd.print(distanceCm);</p>
+	<p>lcd.print(" cm");</p>
 
-	<p>}Serial.println("Object Detected!");</p>
-	<p>}Serial.print("Distance: ");</p>
-	<p>}Serial.println(" cm");</p>
-  	<p>}} else {</p>
-	<p>}&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;// If the object is farthan 100 cm (or not present)</p>
-	<p>} &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;// Turn off the motor and LED</p>
-	<p>}digitalWrite(motorPin, LOW);</p>
-	<p>}digitalWrite(ledPin, LOW);</p>
+	<p>Serial.println("Object Detected!");</p>
+	<p>Serial.print("Distance: ");</p>
+	<p>Serial.println(" cm");</p>
+  	<p>} else {</p>
+	<p>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;// If the object is farthan 100 cm (or not present)</p>
+	<p> &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;// Turn off the motor and LED</p>
+	<p>digitalWrite(motorPin, LOW);</p>
+	<p>digitalWrite(ledPin, LOW);</p>
 
-	<p>} &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;// Show the "no object" message on the LCD</p>
-	<p>}lcd.setCursor(0, 0);</p>
-	<p>}lcd.print("No Object");</p>
-	<p>}lcd.setCursor(0, 1);</p>
-	<p>}lcd.print("Path is Clear");</p>
+	<p> &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;// Show the "no object" message on the LCD</p>
+	<p>lcd.setCursor(0, 0);</p>
+	<p>lcd.print("No Object");</p>
+	<p>lcd.setCursor(0, 1);</p>
+	<p>lcd.print("Path is Clear");</p>
 
 	<p>}Serial.println("No Object");</p>
- <p>} }</p>
+ <p> }</p>
 
-  	<p>}&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;// Wait for 500 milliseconds (0.5 seconds) between each reading.</p>
-	<p>}delay(500);</p>
-<p>}}</p>
+  	<p>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;// Wait for 500 milliseconds (0.5 seconds) between each reading.</p>
+	<p>delay(500);</p>
+<p>}</p>
 </div>
 
 
