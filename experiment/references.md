@@ -1,10 +1,12 @@
 ##  References
 
 #   Books:
-1.	Getting Started with Arduino by Massimo Banzi
-2.	Arduino Workshop by John Boxall
-3.	Sensors and Transducers by D. Patranabis
-# 	Research Papers:
-1.	“A Review on Sensors Used in Robotics” – International Journal of Research in Advent Technology, Vol.6, No.11, Nov 2018.
-2.	“Development of Proximity Sensing System Using Infrared Sensors” – IJETT, Volume 68, Issue 6, 2020.
+- Misra, Y. (2022). Programming and Interfacing with Arduino (1st ed.). CRC Press (Routledge). ISBN: 9781032063164.
+
+- Ziemann, V. (2023). A Hands-On Course in Sensors Using the Arduino and Raspberry Pi (2nd ed.). CRC Press (Taylor & Francis). ISBN: 9781000909203.
+
+- Scherz, P., & Monk, S. (2017). Practical Electronics for Inventors (4th ed.). McGraw-Hill Education. ISBN: 9781259587541.
+
+- Monk, S. (2020). Hacking Electronics: Learning Electronics with Arduino and Raspberry Pi (2nd ed.). McGraw-Hill Education. ISBN: 9781260455850.
+
 
