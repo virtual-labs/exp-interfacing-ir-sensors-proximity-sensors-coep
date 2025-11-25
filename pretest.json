@@ -1,0 +1,65 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the primary function of the analog IR sensor in your project?",
+      "answers": {
+        "a": "To detect colour",
+        "b": "To measure the distance to an object",
+        "c": "To detect light",
+        "d": "To measure temperature"
+      },
+
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What type of pin on the Arduino Uno is the analog IR sensor connected to?",
+      "answers": {
+        "a": "A digital I/O pin",
+        "b": "A 5V power pin",
+        "c": "A PWM (Pulse-Width Modulation) pin",
+        "d": "An analog input pin"
+      },
+   
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+	   {
+      "question": "What is the relationship between the analog IR sensor's voltage output and the distance to an object?",
+      "answers": {
+        "a": "They are inversely proportional and non-linear.",
+        "b": "They are directly proportional and linear",
+        "c": "They are directly proportional and non-linear",
+        "d": "There is no relationship between them"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	 {
+      "question": "What is the main role of the NPN transistor in your circuit?",
+      "answers": {
+        "a": "To decrease the electrical current",
+        "b": "To convert voltage",
+        "c": "To act as a switch, amplifying the low current from the Arduino to control the relay or LED",
+        "d": " To provide 12V power"
+      },
+    
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	 {
+      "question": "In your project, why is a relay used?",
+      "answers": {
+        "a": "To control the speed of the motor",
+        "b": "To safely control the high-power 12V DC motor with the Arduino's low-power signal",
+        "c": "To control the brightness of the LED",
+        "d": "To provide power to the sensor"
+      },
+     
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
