@@ -1,6 +1,6 @@
 ### Theory
 
-An Analog IR sensor is a non-contact device that measures the distance to an object. It works based on the principle of triangulation. The sensor contains two key components: an IR Emitter and an IR Receiver.
+An Analog IR sensor is a non-contact device that measures the distance to an object. The sensor contains two key components: an IR Emitter and an IR Receiver.
 
 ###	IR Emitter
  This is an infrared LED that sends out a beam of infrared light.
