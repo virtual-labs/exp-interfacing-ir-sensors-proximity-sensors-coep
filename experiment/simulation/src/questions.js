@@ -54,14 +54,41 @@
 				+ '<button  class="btn btn-danger" id="testSubmit" >Submit Test</button>'
 				
 				
-//				+ '<button id="mimicSubmit" class=" btn btn-danger nextLevelBtn" hidden>Next Level</button>'
+				+ '<button id="mimicSubmit" class=" btn btn-danger nextLevelBtn" hidden>Result</button>'
 		
-				
+				function highlightAnswers() {
+    for (var i = 0; i < QuestionsJSON.data["SEC"].length; i++) {
+        for (var j = 0; j < QuestionsJSON.data["SEC"][i].QUES.length; j++) {
+            for (var k = 0; k < QuestionsJSON.data["SEC"][i].QUES[j].ANS.length; k++) {
+                
+                var ans = QuestionsJSON.data["SEC"][i].QUES[j].ANS[k];
+                var selector = "input[name='radio-" + i + "'][value='" + ans.content + "']";
+                var label = $(selector).next("p"); // the <p> containing answer text
+
+                // ✔ Mark correct answers green
+                if (ans.ANSID === true || ans.ANSID === "true") {
+                    label.addClass("correctAnswer");
+                }
+
+                // ❌ Mark user-selected wrong answer red
+                if ($(selector).is(":checked") && ans.ANSID !== true && ans.ANSID !== "true") {
+                    label.addClass("wrongAnswer");
+                }
+            }
+        }
+    }
+}
+
 		
 
 			$("#canvas-div1").html(questions);
 
-			$('#testSubmit').on('click', function() {		
+			$('#testSubmit').on('click', function() {	
+				
+				$("input[type='radio']").prop("disabled", true);
+				$("#testSubmit").prop('disabled',true);
+				$("#mimicSubmit").prop('hidden',false);
+	
 				$("body").css("padding","0px 0px 0px 0px");
 					var arr = [];
 					
@@ -107,14 +134,20 @@
 //						 $("#modelMsg").html("<b class='boldTextGreen'>Test Submitted Successfully . Correct Answers Are : " + ansCount+"</b>");
 //						alert("Test Submitted Successfully . Correct Answers Are : " + ansCount);
 						showSwal('Test Submitted Successfully','info');
-						
-						result();
+						highlightAnswers()
+//						result();
 						
 						
 		   					
 					}
 
 						
+			});
+			
+			$('#mimicSubmit').on('click', function() {	
+				result();
+				
+				
 			});
 			
 		
