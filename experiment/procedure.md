@@ -31,4 +31,4 @@
 - Click on result button, "Result" page will displayed<br>
 
 
- ![*Sensor* ](images/Experiment1.png) <br>
+ ![*Sensor* ](images/Experiment3.png) <br>
